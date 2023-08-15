@@ -9,7 +9,7 @@ This App uses Spring boot version 2.7.3 and JDK 1.8+.<br>
 - Make sure you are using appropriate JDK version(above 1.8). However, the application should run fine if the Java version is not below 8.
 - Preferably run the application in IntelliJ IDE to avoid any sort of version issues.
 
-At this point there will be a database error. In order to switch to `src/main/resources/application.properties`, change to your own you database username and password if applicable.
+At this point there will be a database error. In order to solve it, switch to `src/main/resources/application.properties` file, change to your own you database url, username and password if applicable.
 - Create a schema called `magazine` in the database.
 
 Now spring boot will automatically create all the necessary tables after you manually create a schema called `magazine`. 
