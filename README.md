@@ -1,5 +1,4 @@
-# news-service-backend 
-<hr>
+# news-service-backend
 This is a simple Java/Maven/Spring Boot application that is used for a news service where any publisher can create a news article and publish it on the application page.
 
 ### How to Run
@@ -11,9 +10,11 @@ This App uses Spring boot version 2.7.3 and JDK 1.8+.<br>
 - Preferably run the application in IntelliJ IDE to avoid any sort of version issues.
 
 At this point there will be a database error. In order to switch to `src/main/resources/application.properties`, change to your own you database username and password if applicable.
-Now spring boot will automatically create all the necessary tables after you manually create a schema called `magazine` on the database.
+- Create a schema called `magazine` in the database.
 
-- Re-run the application and it will run without any error(s).
+Now spring boot will automatically create all the necessary tables after you manually create a schema called `magazine`. 
+
+- Re-run the application and it will run without any error(s) anymore.
 
 **MySQL Database Modification**
 <br><hr>
@@ -22,7 +23,7 @@ Now switch to the `roles` table and populate the first three rows with these thr
 - `ROLE_AUTHOR`
 - `ROLE_USER`
 
-The application will be able to create new users based on their roles and perform necessary actions.
+The `id` column populates itself with Auto increment. The application will be able to create new users based on their roles and perform necessary actions.
 
 **Create Admin**<br><hr>
 To create an Admin please utilize other API services like `Postman`. However, it is also possible to perform this task from IntelliJ IDE. Switch to `src/main/java/com.magazine.backend/controllers/AuthController.java` class and move to line 75. There will be an earth icon, click it and select `Generate request in HTTP Client`, it will also do the similar task.
